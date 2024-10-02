@@ -53,7 +53,7 @@ const Navbar = () => {
             smooth={true}
             duration={300}
             onClick={() => setActiveIndex(index)}
-            className={`relative text-white px-3 py-2 text-base md:text-3xl cursor-pointer ${
+            className={`relative text-white px-3 py-2 text-base md:text-3xl cursor-pointer font-semibold ${
               index === activeIndex
                 ? "underline"
                 : "hover:underline transition-all"
