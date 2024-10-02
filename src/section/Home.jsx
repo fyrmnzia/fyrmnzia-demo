@@ -3,7 +3,7 @@ import Typing from "react-typing-effect";
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-center h-screen mx-20 text-red-600">
+    <div className="flex justify-center items-center h-screen text-red-600">
       <div className="text-center">
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold">
           <Typing

@@ -43,8 +43,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 p-4 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm">
-      <div className="flex justify-center gap-4 md:gap-10">
+    <nav
+      className="fixed top-0 left-0 right-0 z-10 p-4 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm
+    border-b-2 border-[rgba(0,0,0,0.1)]"
+    >
+      <div className="flex justify-center">
         {navItems.map((item, index) => (
           <Link
             key={index}
@@ -53,9 +56,9 @@ const Navbar = () => {
             smooth={true}
             duration={300}
             onClick={() => setActiveIndex(index)}
-            className={`relative text-white px-3 py-2 text-base md:text-3xl cursor-pointer font-semibold ${
+            className={`relative mx-auto text-white px-3 py-2 text-base md:text-3xl cursor-pointer font-semibold ${
               index === activeIndex
-                ? "underline"
+                ? "underline scale-110"
                 : "hover:underline transition-all"
             } ${colors[index % colors.length]}`} // Menambahkan warna berbeda untuk setiap item
             aria-current={index === activeIndex ? "page" : undefined}
