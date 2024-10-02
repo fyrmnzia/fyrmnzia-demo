@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./section/Home";
 import About from "./section/About";
+import Skill from "./section/Skill";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </section>
         <section id="about">
           <About />
+        </section>
+        <section id="skill">
+          <Skill />
         </section>
       </main>
     </div>

@@ -1,4 +1,11 @@
 import React, { useEffect, useState } from "react";
+import {
+  GiBorderedShield,
+  GiCastle,
+  GiClosedBarbute,
+  GiCrossedSwords,
+  GiTrumpet,
+} from "react-icons/gi";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -14,11 +21,11 @@ const Navbar = () => {
   ];
 
   const navItems = [
-    { name: "Home", path: "home" },
-    { name: "About", path: "about" },
-    { name: "Skill", path: "skill" },
-    { name: "Project", path: "project" },
-    { name: "Contact", path: "contact" },
+    { name: "Home", path: "home", icon: <GiCastle /> },
+    { name: "About", path: "about", icon: <GiClosedBarbute /> },
+    { name: "Skill", path: "skill", icon: <GiBorderedShield /> },
+    { name: "Project", path: "project", icon: <GiCrossedSwords /> },
+    { name: "Contact", path: "contact", icon: <GiTrumpet /> },
   ];
 
   useEffect(() => {
@@ -56,13 +63,14 @@ const Navbar = () => {
             smooth={true}
             duration={300}
             onClick={() => setActiveIndex(index)}
-            className={`relative mx-auto text-white px-3 py-2 text-base md:text-3xl cursor-pointer font-semibold ${
+            className={`relative flex gap-1 items-center md:gap-2 mx-auto text-white text-base md:text-3xl cursor-pointer font-semibold ${
               index === activeIndex
                 ? "underline scale-110"
                 : "hover:underline transition-all"
             } ${colors[index % colors.length]}`} // Menambahkan warna berbeda untuk setiap item
             aria-current={index === activeIndex ? "page" : undefined}
           >
+            {item.icon}
             {item.name}
           </Link>
         ))}
