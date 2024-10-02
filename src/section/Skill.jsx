@@ -125,7 +125,7 @@ const Skill = () => {
 
   return (
     <div className="flex flex-col min-h-screen text-green-600">
-      <div className="text-justify mt-24 items-center">
+      <div className="text-justify mt-16 md:mt-20 items-center">
         <h1 className="text-xl items-center md:text-2xl lg:text-5xl font-bold underline flex gap-2 md:gap-4">
           <GiBorderedShield />
           My Skill

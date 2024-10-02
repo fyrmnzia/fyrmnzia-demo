@@ -7,7 +7,7 @@ import Skill from "./section/Skill";
 
 function App() {
   return (
-    <div className="bg-black text-white font-VT323 min-h-screen">
+    <div className="bg-black text-white font-VT323 min-h-screen blur-[1px]">
       <Navbar />
       <main className="mx-10 md:mx-20">
         <section id="home">

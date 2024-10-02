@@ -4,7 +4,7 @@ import { GiClosedBarbute } from "react-icons/gi";
 const About = () => {
   return (
     <div className="flex min-h-screen text-blue-600">
-      <div className="text-justify mt-24">
+      <div className="text-justify mt-16 md:mt-20">
         <h1 className="text-xl items-center md:text-2xl lg:text-5xl font-bold underline flex gap-2 md:gap-4">
           <GiClosedBarbute />
           About Me

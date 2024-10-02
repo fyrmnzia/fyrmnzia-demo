@@ -67,7 +67,7 @@ const Navbar = () => {
               index === activeIndex
                 ? "underline scale-110"
                 : "hover:underline transition-all"
-            } ${colors[index % colors.length]}`} // Menambahkan warna berbeda untuk setiap item
+            } ${colors[index % 5]}`} // Menambahkan warna berbeda untuk setiap item
             aria-current={index === activeIndex ? "page" : undefined}
           >
             {item.icon}
