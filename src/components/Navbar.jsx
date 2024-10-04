@@ -13,11 +13,11 @@ const Navbar = () => {
 
   // Tambahkan array warna untuk setiap item
   const colors = [
-    "text-red-500",
-    "text-blue-500",
-    "text-green-500",
-    "text-yellow-500",
-    "text-purple-500",
+    "text-red-600",
+    "text-blue-600",
+    "text-green-600",
+    "text-yellow-600",
+    "text-purple-600",
   ];
 
   const navItems = [
@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-10 p-4 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm
+      className="sticky top-0 left-0 right-0 z-10 p-4 bg-[rgba(0,0,0,0.1)] backdrop-blur-sm
     border-b-2 border-[rgba(0,0,0,0.1)]"
     >
       <div className="flex justify-center">
@@ -63,12 +63,13 @@ const Navbar = () => {
             smooth={true}
             duration={300}
             onClick={() => setActiveIndex(index)}
-            className={`relative flex gap-1 items-center md:gap-2 mx-auto text-white text-base md:text-3xl cursor-pointer font-semibold ${
+            className={`${
+              colors[index % colors.length]
+            } relative flex gap-1 items-center md:gap-2 mx-auto text-base md:text-3xl cursor-pointer font-semibold ${
               index === activeIndex
                 ? "underline scale-110"
                 : "hover:underline transition-all"
-            } ${colors[index % 5]}`} // Menambahkan warna berbeda untuk setiap item
-            aria-current={index === activeIndex ? "page" : undefined}
+            }`}
           >
             {item.icon}
             {item.name}
