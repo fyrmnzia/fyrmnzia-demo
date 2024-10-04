@@ -26,7 +26,7 @@ const About = () => {
           </div>
           <div className="mt-5 w-full items-center justify-center ml-5">
             <div className="ml-5 md:ml-0 ">
-              <h1 className="text-xl md:text-2xl lg:text-3xl underline font-semibold">
+              <h1 className="text-xl md:text-2xl lg:text-3xl no-underline md:underline font-semibold">
                 Profile
               </h1>
               <p className="text-base md:text-xl lg:text-2xl mt-2">
@@ -35,7 +35,7 @@ const About = () => {
                 Negeri jatinangor in 2023. I'm a web developer and also
                 administrator.
               </p>
-              <h1 className="mt-5 text-xl md:text-2xl lg:text-3xl underline font-semibold">
+              <h1 className="mt-5 text-xl md:text-2xl lg:text-3xl no-underline md:underline font-semibold">
                 Education
               </h1>
               <p className="text-base md:text-xl lg:text-2xl mt-2">
@@ -43,7 +43,7 @@ const About = () => {
                 development self-taught by watching learning videos, such as
                 HTML, CSS, and even JavaScript.
               </p>
-              <h1 className="mt-5 text-xl md:text-2xl lg:text-3xl underline font-semibold">
+              <h1 className="mt-5 text-xl md:text-2xl lg:text-3xl no-underline md:underline font-semibold">
                 Ambition
               </h1>
               <p className="text-base md:text-xl lg:text-2xl mt-2">
